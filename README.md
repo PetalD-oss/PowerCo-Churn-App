@@ -27,10 +27,36 @@ Repository Structure
 .
 ├── app.py                      # Streamlit application
 ├── logistic_model.ipynb        # Model training notebook
-├── xgboost_model.pkl          # Trained XGBoost model
-├── scaler.pkl                 # Fitted StandardScaler
+├── xgboost_model.pkl          # Trained XGBoost model                
 ├── feature_names.pkl          # Selected feature list
-├── requirements.txt           # Python dependencies
 └── README.md
 ```
+##  Model Development Journey
 
+### Challenge: Severe Class Imbalance
+- Only 10% of customers churn (10:1 imbalance ratio)
+- Standard models predicted "no churn" for everyone
+
+| Iteration | Model | Technique | Precision | Recall | Key Insight |
+|-----------|-------|-----------|-----------|--------|-------------|
+| 1 | Logistic Regression | Baseline (4 features) | 13% | 64% | Simple model, high recall |
+| 2 | Random Forest | class_weight tuning | 15% | 63% | Ensemble didn't help much |
+| 3 | XGBoost | All 24 features | 18% | 50% | Best precision, worse recall |
+| 4 | **XGBoost + SMOTE** | **Top 7 features** | **18%** | **57%** | **Best balance** ✅ |
+
+### Final Model Selection
+**XGBoost with SMOTE and top 5 features** provided the optimal precision-recall tradeoff while maintaining usability with only 7 input fields instead of 24.
+
+## SETUP 
+### PREREQUISITES
+- Python 3.8+
+- pip package manager
+
+### DEPENDENCIES REQUIRED 
+Install dependencies 
+- Scikit - learn
+- Numpy
+- Pandas
+- Streamlit
+- Matplotlib
+- XGBoost 

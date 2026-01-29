@@ -15,7 +15,7 @@ This project is a continuation of my previous project (https://github.com/PetalD
 - **Adjustable Risk Threshold**: Customizable sensitivity slider to balance precision vs. recall based on business needs
 - **Top Feature Focus**: Uses only the top 7 most important features for ease of use
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 - **Model**: XGBoost Classifier
 - **Deployment**: Streamlit web application

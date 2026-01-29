@@ -45,7 +45,7 @@ Repository Structure
 | 4 | **XGBoost selected feature importance** | **Top 7 features** | **18%** | **57%** | **Best balance** ✅ |
 
 ### Final Model Selection
-**XGBoost with SMOTE and top 5 features** provided the optimal precision-recall tradeoff while maintaining usability with only 7 input fields instead of 24.
+**XGBoost with top feature selection** provided the optimal precision-recall tradeoff while maintaining usability with only 7 input fields instead of 24.
 
 ## SETUP 
 ### PREREQUISITES

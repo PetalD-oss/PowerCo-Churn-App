@@ -42,7 +42,7 @@ Repository Structure
 | 1 | Logistic Regression | Baseline (4 features) | 13% | 64% | Simple model, high recall |
 | 2 | Random Forest | class_weight tuning | 15% | 63% | Ensemble didn't help much |
 | 3 | XGBoost | All 24 features | 18% | 50% | Best precision, worse recall |
-| 4 | **XGBoost + SMOTE** | **Top 7 features** | **18%** | **57%** | **Best balance** ✅ |
+| 4 | **XGBoost selected feature importance** | **Top 7 features** | **18%** | **57%** | **Best balance** ✅ |
 
 ### Final Model Selection
 **XGBoost with SMOTE and top 5 features** provided the optimal precision-recall tradeoff while maintaining usability with only 7 input fields instead of 24.

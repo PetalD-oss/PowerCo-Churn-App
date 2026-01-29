@@ -1,7 +1,6 @@
 import streamlit as st 
 import pickle 
 import numpy as np 
-from xgboost import XGBClassifier 
 
 @st.cache_resource
 def load_model(): 
@@ -66,4 +65,5 @@ if st.button('Predict Churn'):
      
  #model's confidence 
      confidence = "High" if max(probability[0]) > 0.7 else "Medium" if max(probability[0]) > 0.5 else "Low"
+
      st.info(f"Model Confidence: **{confidence}**")

@@ -52,11 +52,9 @@ Repository Structure
 - Python 3.8+
 - pip package manager
 
-### DEPENDENCIES REQUIRED 
-Install dependencies 
-- Scikit - learn
-- Numpy
-- Pandas
-- Streamlit
-- Matplotlib
-- XGBoost 
+## Setup
+1. Clone the repository
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```

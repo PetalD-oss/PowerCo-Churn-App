@@ -29,6 +29,7 @@ Repository Structure
 ├── logistic_model.ipynb        # Model training notebook
 ├── xgboost_model.pkl          # Trained XGBoost model                
 ├── feature_names.pkl          # Selected feature list
+├── requirements.txt           #dependencies
 └── README.md
 ```
 ##  Model Development Journey
